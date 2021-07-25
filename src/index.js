@@ -11,6 +11,9 @@ ReactDOM.render(
       <th>Top Color</th>
     </tr>
     {cars.map((car) => {
+      // When destructuring arrays, we can name individual items anything
+      // we want but with destructuring objects, the names have to match
+      // object property names
       const { model, coloursByPopularity, speedStats } = car;
       const [firstColor] = coloursByPopularity;
       const { topSpeed } = speedStats;
