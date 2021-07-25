@@ -14,8 +14,9 @@ ReactDOM.render(
       // When destructuring arrays, we can name individual items anything
       // we want but with destructuring objects, the names have to match
       // object property names
-      const { model, coloursByPopularity, speedStats } = car;
-      const [firstColor] = coloursByPopularity;
+      // If we wish to rename we can use : to pick a new name (example colors)
+      const { model, coloursByPopularity: colors, speedStats } = car;
+      const [firstColor] = colors;
       const { topSpeed } = speedStats;
       return (
         <tr>
