@@ -1,2 +1,4 @@
 # ES6-destructuring-practise
-Created with CodeSandbox
+When destructuring arrays, we can name individual items anything we want but with destructuring objects, the names have to match bject property names
+If we wish to rename we can use : to pick a new name
+(example colorsByPopularity: colors)
